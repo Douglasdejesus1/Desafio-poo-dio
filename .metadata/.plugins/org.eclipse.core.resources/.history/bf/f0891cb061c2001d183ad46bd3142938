@@ -1,0 +1,58 @@
+package domain.model;
+
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+
+public class Dev {
+	private String nome;
+	private Set<Treinamento> conteudosInscritos = new LinkedHashSet<>();
+	private Set<Treinamento> conteudosConcluidos =new LinkedHashSet<>();
+	
+	private void instreverCurso(Treinamento conteudo) {
+		conteudosInscritos.add(conteudo);
+	}
+	private void concluirCurso(Treinamento conteudo) {
+		conteudosInscritos.remove(conteudo);
+		conteudosConcluidos.add(conteudo);
+	}
+	
+	
+	private void progredir() {
+		
+		
+	}
+	
+	private void CalcularTotalXp() {
+		
+	}
+	
+	private void exibirCursosInscritos() {
+		for (Treinamento atividade: conteudosInscritos) {
+			System.out.println(atividade);
+		}
+	}
+	private void exibirConteudosConcluidos() {
+		for (Treinamento atividade: conteudosConcluidos) {
+			System.out.println(atividade);
+		}
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(conteudosConcluidos, conteudosInscritos, nome);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Dev other = (Dev) obj;
+		return Objects.equals(conteudosConcluidos, other.conteudosConcluidos)
+				&& Objects.equals(conteudosInscritos, other.conteudosInscritos) && Objects.equals(nome, other.nome);
+	}
+
+}

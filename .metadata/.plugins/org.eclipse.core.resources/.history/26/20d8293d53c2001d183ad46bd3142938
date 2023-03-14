@@ -1,0 +1,29 @@
+package domain.model;
+
+import java.util.List;
+
+public class Dev {
+	private String nome;
+	private List<Mentoria> mentorias;
+	private List<AtividadeCurso> atividades;
+	
+	private void instreverCurso(AtividadeCurso curso) {
+		
+		atividades.add(new AtividadeCurso());
+	}
+	private void progredir() {
+		
+		
+	}
+	
+	private void CalcularTotalXp() {
+		
+	}
+	
+	private void exibirCursos() {
+		for (AtividadeCurso atividade: atividades) {
+			System.out.println(atividade);
+		}
+	}
+
+}

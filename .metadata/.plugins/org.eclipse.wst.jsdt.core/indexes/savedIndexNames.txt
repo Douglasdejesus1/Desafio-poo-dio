@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Temp\Dio-Banco-PAN\Projeto-BootCamp-Dio-BancoPan\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2830389983.index

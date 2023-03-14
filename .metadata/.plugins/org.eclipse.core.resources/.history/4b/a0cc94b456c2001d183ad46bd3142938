@@ -1,0 +1,20 @@
+import java.time.LocalDate;
+
+import domain.model.Curso;
+import domain.model.Mentoria;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Curso javaBasico = new Curso("Java Basico", "tipos primitivos, "
+				+ "modificadores de acesso,poo", 40);
+		
+		Mentoria  java20 = new Mentoria("Novidade Java20", "conheca as novas funcionalidades",
+				LocalDate.of(2022, 03, 14));
+		
+		System.out.println(javaBasico);
+		System.out.println(java20);
+
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Temp\Dio-Banco-PAN\Projeto-BootCamp-Dio-BancoPan\.metadata\.plugins\org.eclipse.jdt.core
+2830389983.index
+1865797976.index
+4146874871.index
